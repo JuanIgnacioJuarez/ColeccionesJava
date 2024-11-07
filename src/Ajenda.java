@@ -48,7 +48,10 @@ public class Ajenda {
                     sc.next();
                 }
             }
-            agenda.put(nombre, numero);
+            if(agenda.get(nombre) == null)
+                agenda.put(nombre, numero);
+            else
+                System.out.println("El contacto ya fue agendado");
             sc.nextLine();
             System.out.println("¿Desea agregar otro dato a la agenda? (SI: 'S' / NO: 'N')");
             String opc;

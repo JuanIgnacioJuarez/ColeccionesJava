@@ -17,7 +17,7 @@ public class Main {
                 Ajenda.menu();
                 menu();
             case 2:
-                CPU.costoComputadora();
+                CostoComputadora.costoComputadora();
                 menu();
             case 3:
                 break;
